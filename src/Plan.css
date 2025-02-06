@@ -1,0 +1,187 @@
+.plan-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9fafb;
+  gap: 40px;
+}
+
+.plan-title {
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: 700;
+  color: #1f2937;
+  font-weight: bold;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.plan-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 549px;
+}
+
+.plan-subtitle {
+  line-height: 27px;
+  font-size: 18px;
+  color: #6b7280;
+  font-weight: bold;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.toggle span {
+  font-size: 16px;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #a6aebb;
+  cursor: pointer;
+}
+
+.toggle span.active {
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #635bff;
+}
+
+.toggle-button {
+  width: 50px;
+  height: 25px;
+  background-color: #D8DBE0;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #635bff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  transition: transform 0.3s;
+}
+
+.circle.left {
+  transform: translateX(2px);
+}
+
+.circle.right {
+  transform: translateX(25px);
+}
+
+.plan-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  background-color: #ffffff;
+  border: 1px solid #635BFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 300px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.plan-card:hover {
+  transform: scale(1.05);
+}
+
+.plan-card.pro {
+  background-color: #00112D;
+  color: #ffffff;
+}
+
+.plan-card.pro .plan-price span {
+  color: #ffffff;
+}
+
+.plan-name {
+  font-size: 20px;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.plan-description {
+  font-size: 16px;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: inherit;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-features li {
+  font-size: 16px;
+}
+
+.plan-price {
+  font-size: 24px;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+.plan-price span {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.plan-button {
+  display: inline-block;
+  background-color: #6d28d9;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.plan-button:hover {
+  background-color: #5b21b6;
+}

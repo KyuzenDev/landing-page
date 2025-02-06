@@ -1,0 +1,173 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #ffffff;
+  color: white;
+  position: sticky;
+  z-index: 100;
+  top: 0px;
+  gap: 50px;
+}
+
+.navbar .logo img {
+  width: 150px;
+}
+
+.menuContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: #00112d;
+}
+
+.navbar .menu a:hover {
+  text-decoration: none;
+  transition: all 200ms;
+  color: #635bff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: #ffffff;
+  color: #00112d;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dropdown-toggle:hover {
+  color: #635bff;
+}
+
+.dropdown-menu {
+  position: absolute;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 12px;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 2px;
+}
+
+.dropdown-menu a {
+  color: #00112d;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .actions button {
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  transition: all 200ms;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 8px;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 40px;
+}
+
+.navbar .signin {
+  background-color: white;
+  color: #635bff;
+  cursor: pointer;
+}
+
+.navbar .signin:hover {
+  background-color: white;
+  font-size: small;
+  cursor: pointer;
+}
+
+.navbar .trial {
+  background-color: #635bff;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .trial:hover {
+  background-color: #5a52e0;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .actions.open {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+  .navbar .menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    color: black;
+  }
+  .navbar .actions {
+    display: none;
+  }
+
+  .navbar .actions.open {
+    display: block;
+  }
+
+  .navbar {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

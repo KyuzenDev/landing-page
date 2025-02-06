@@ -1,0 +1,39 @@
+.ads {
+  width: 100%;
+  max-height: 153px;
+  background-color: #0f2060;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-image: url(./assets/background/bg_ads.png);
+  background-size: cover;
+}
+
+.ads-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ads-wrapper .logos {
+  display: flex;
+  flex-direction: row;
+  gap: 96px;
+}
+
+@media (max-width: 1024px) {
+  .ads {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+  }
+
+  .ads-wrapper .logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .logos img {
+    width: 70%;
+  }
+}
