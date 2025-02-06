@@ -1,0 +1,123 @@
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9fafb;
+  gap: 40px;
+}
+
+.blog-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.blog-tag {
+  display: inline-block;
+  background-color: #e0e7ff;
+  color: #4338ca;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.blog-title {
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: 700;
+  color: #1f2937;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  gap: 10px;
+}
+
+.blog-subtitle {
+  font-size: 18px;
+  line-height: 27px;
+  color: #7B889D;
+  max-width: 600px;
+  font-weight: 400;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  gap: 10px;
+}
+
+.blog-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 300px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+}
+
+.blog-image {
+  background-color: #1e3a8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.blog-image img {
+  max-width: 80%;
+  height: auto;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-article-title {
+  font-size: 18px;
+    font-weight: 700;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.blog-date {
+  font-size: 14px;
+  color: #6b7280;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  gap: 10px;
+}
+.blog-button {
+  background-color: #6d28d9;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.blog-button:hover {
+  background-color: #5b21b6;
+}

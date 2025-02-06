@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import amazon from "../assets/ads/amazon.svg";
-import ebay from "../assets/ads/ebay.svg";
+import ebay from "../assets/ads/eBay.svg";
 import uber from "../assets/ads/uber.svg";
 import walmart from "../assets/ads/walmart.svg";
 
