@@ -48,7 +48,7 @@ const Plan = () => {
             <p className="plan-description">
               Fuel your product workflow with more advanced research features.
             </p>
-            <ul className="plan-features">
+            <ul className="plan-features pro">
               <li>Unlimited workspace</li>
               <li>Access to RestAPI</li>
               <li>Priority Customer Support</li>
@@ -56,10 +56,10 @@ const Plan = () => {
             </ul>
           </div>
           <div className="plan-card-bottom">
-            <p className="plan-price">
+            <p className="plan-price pro">
               ${isYearly ? "250" : "30"} <span>/ month</span>
             </p>
-            <button className="plan-button">Book Demo</button>
+            <button className="plan-button pro">Book Demo</button>
           </div>
         </div>
         <div className="plan-card enterprises">

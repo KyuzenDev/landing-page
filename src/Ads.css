@@ -8,6 +8,16 @@
   background-size: cover;
 }
 
+.logos .logo {
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.logos .logo:hover {
+  transform: scale(1.05);
+}
+
 .ads-wrapper {
   display: flex;
   justify-content: center;
@@ -23,7 +33,7 @@
   .ads {
     padding-top: 24px;
     padding-bottom: 24px;
-    padding-left: 24px;
+    padding-left: 28px;
   }
 
   .ads-wrapper .logos {

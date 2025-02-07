@@ -1,23 +1,26 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import graphic_blog_1 from "../assets/graphic/graphic_blog_1.png";
+import graphic_blog_2 from "../assets/graphic/graphic_blog_2.png";
+import graphic_blog_3 from "../assets/graphic/graphic_blog_3.png";
 
 const Blog = () => {
   const articles = [
     {
       title: "Online Payment Failure: Why it Happens and How to Avoid it.",
       date: "January 4, 2024",
-      image: "../assets/graphic/graphic_blog_1.png",
+      image: graphic_blog_1,
     },
     {
-      title: "Some of strategies for Quickly Expanding Your Business.",
+      title: "Some strategies for Quickly Expanding Your Business.",
       date: "February 8, 2024",
-      image: "../assets/graphic/graphic_blog_2.png",
+      image: graphic_blog_2,
     },
     {
       title:
         "Business strategy converging into a new approach for solving business.",
       date: "January 16, 2024",
-      image: "../assets/graphic/graphic_blog_3.png",
+      image: graphic_blog_3,
     },
   ];
 
@@ -51,3 +54,4 @@ const Blog = () => {
 };
 
 export default Blog;
+  

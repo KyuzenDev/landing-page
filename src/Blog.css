@@ -1,8 +1,8 @@
 .blog-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
   padding: 50px 20px;
   background-color: #f9fafb;
   gap: 40px;
@@ -40,7 +40,7 @@
 .blog-subtitle {
   font-size: 18px;
   line-height: 27px;
-  color: #7B889D;
+  color: #7b889d;
   max-width: 600px;
   font-weight: 400;
   font-family: "DM Sans", serif;
@@ -52,72 +52,76 @@
 
 .blog-cards {
   display: flex;
-  justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .blog-card {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  max-width: 300px;
   overflow: hidden;
-  text-align: left;
-  transition: transform 0.3s;
+  width: 300px;
+  min-height: 379px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .blog-card:hover {
+  .blog-article-title{
+    color: #007bff;
+    text-decoration: underline;
+  }
   transform: scale(1.05);
 }
 
-.blog-image {
-  background-color: #1e3a8a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-}
-
 .blog-image img {
-  max-width: 80%;
+  display: block;
+  width: 100%;
   height: auto;
 }
 
 .blog-content {
-  padding: 20px;
-}
+  display: flex;
+  flex-direction: column;
+  min-height: 28%;
+  justify-content: space-between;
+  padding: 8px 24px;
+} 
 
 .blog-article-title {
-  font-size: 18px;
-    font-weight: 700;
+  color: #00112D;
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
+  font-weight: 500;
   font-style: normal;
-  margin-bottom: 10px;
-  color: #1f2937;
 }
 
 .blog-date {
-  font-size: 14px;
-  color: #6b7280;
+  color: #7B889D;
+  font-size: 16px;
+  line-height: 24px;
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
+  font-weight: 500;
   font-style: normal;
-  display: flex;
-  gap: 10px;
 }
+
+.blog-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .blog-button {
-  background-color: #6d28d9;
-  color: #ffffff;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 8px;
+  background-color: #635BFF;
   border: none;
+  border-radius: 40px;
+  color: #fff;
   cursor: pointer;
+  padding: 18px 32px;
+  font-size: 1rem;
 }
 
 .blog-button:hover {
-  background-color: #5b21b6;
+  background-color: #5a52e0;
 }

@@ -67,7 +67,7 @@
 .toggle-button {
   width: 50px;
   height: 25px;
-  background-color: #D8DBE0;
+  background-color: #d8dbe0;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
@@ -100,17 +100,25 @@
 
 .plan-card {
   background-color: #ffffff;
-  border: 1px solid #635BFF;
-  border-radius: 12px;
+  border: 1px solid #635bff;
+  border-radius: 24px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  max-width: 300px;
-  padding: 20px;
+  max-width: 378px;
+  min-height: 685px;
+  padding: 32px;
   text-align: left;
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+}
+
+.plan-card-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  gap: 32px;
 }
 
 .plan-card:hover {
@@ -118,16 +126,13 @@
 }
 
 .plan-card.pro {
-  background-color: #00112D;
-  color: #ffffff;
-}
-
-.plan-card.pro .plan-price span {
+  background-color: #00112d;
   color: #ffffff;
 }
 
 .plan-name {
-  font-size: 20px;
+  font-size: 32px;
+  line-height: 38.4px;
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -135,20 +140,32 @@
 }
 
 .plan-description {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 27px;
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
+  color: #7b889d;
   font-weight: 400;
   font-style: normal;
-  color: inherit;
 }
 
 .plan-features {
   list-style: none;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  color: #00112d;
+  font-weight: 400;
+  font-style: normal;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 18px;
+}
+
+.plan-features.pro {
+  color: #ffffff;
 }
 
 .plan-features li {
@@ -156,9 +173,29 @@
 }
 
 .plan-price {
-  font-size: 24px;
+  font-size: 60px;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  color: #635BFF;
   font-weight: 700;
   align-self: flex-start;
+}
+
+.plan-price.pro {
+  color: #ffffff;
+}
+
+.plan-price span {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  color: #7B889D;
+  font-weight: 400;
+}
+
+.plan-price.pro .plan-month {
+  color: #7B889D;
 }
 
 .plan-price span {
@@ -166,20 +203,32 @@
   color: #6b7280;
 }
 
+.plan-card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .plan-button {
   display: inline-block;
-  background-color: #6d28d9;
-  color: #ffffff;
-  padding: 10px 20px;
+  background-color: white;
+  color: #00112D;
+  padding: 12px 32px;
   font-size: 16px;
-  font-weight: 600;
-  border-radius: 8px;
-  border: none;
+  font-weight: 500;
+  border-radius: 40px;
+  border: 1px solid #635bff;
   cursor: pointer;
   width: 100%;
   align-self: flex-end;
 }
 
+.plan-button.pro {
+  background-color: #635bff;
+  color: white;
+}
+
 .plan-button:hover {
-  background-color: #5b21b6;
+  background-color: #5a52e0;
+  color: white;
 }
