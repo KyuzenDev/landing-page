@@ -1,8 +1,45 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import checkIcon from "../assets/graphic/check-circle.svg"; // Ganti dengan jalur ikon centang yang benar
 
 const Plan = () => {
   const [isYearly, setIsYearly] = useState(true);
+
+  const plans = [
+    {
+      name: "Basic",
+      description: "Kickstart product research in your business at no cost.",
+      price: isYearly ? "199" : "20",
+      features: ["Unlimited workspace", "Access to RestAPI"],
+    },
+    {
+      name: "Pro",
+      description:
+        "Fuel your product workflow with more advanced research features.",
+      price: isYearly ? "250" : "30",
+      features: [
+        "Unlimited workspace",
+        "Access to RestAPI",
+        "Priority Customer Support",
+        "Real-Time Analytics",
+      ],
+      isPro: true,
+    },
+    {
+      name: "Enterprises",
+      description: "Scale product research and learning across your company.",
+      price: isYearly ? "499" : "50",
+      features: [
+        "Unlimited workspace",
+        "Access to RestAPI",
+        "Priority Customer Support",
+        "Real-Time Analytics",
+        "Data Export Capabilities",
+        "Advanced Security",
+        "Multi-User Access",
+      ],
+    },
+  ];
 
   return (
     <section className="plan-section">
@@ -24,67 +61,37 @@ const Plan = () => {
         </div>
       </div>
       <div className="plan-cards">
-        <div className="plan-card basic">
-          <div className="plan-card-top">
-            <h3 className="plan-name">Basic</h3>
-            <p className="plan-description">
-              Kickstart product research in your business at no cost.
-            </p>
-            <ul className="plan-features">
-              <li>Unlimited workspace</li>
-              <li>Access to RestAPI</li>
-            </ul>
+        {plans.map((plan, index) => (
+          <div
+            key={index}
+            className={`plan-card ${plan.isPro ? "pro active" : ""}`}
+          >
+            <div className="plan-card-top">
+              <h3 className="plan-name">{plan.name}</h3>
+              <p className="plan-description">{plan.description}</p>
+              <ul className={`plan-features ${plan.isPro ? "pro" : ""}`}>
+                {plan.features.map((feature, idx) => (
+                  <li key={idx}>
+                    <img
+                      src={checkIcon}
+                      alt="check icon"
+                      className="check-icon"
+                    />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="plan-card-bottom">
+              <p className={`plan-price ${plan.isPro ? "pro" : ""}`}>
+                ${plan.price} <span>/ month</span>
+              </p>
+              <button className={`plan-button ${plan.isPro ? "pro" : ""}`}>
+                Book Demo
+              </button>
+            </div>
           </div>
-          <div className="plan-card-bottom">
-            <p className="plan-price">
-              ${isYearly ? "199" : "20"} <span>/ month</span>
-            </p>
-            <button className="plan-button">Book Demo</button>
-          </div>
-        </div>
-        <div className="plan-card pro active">
-          <div className="plan-card-top">
-            <h3 className="plan-name">Pro</h3>
-            <p className="plan-description">
-              Fuel your product workflow with more advanced research features.
-            </p>
-            <ul className="plan-features pro">
-              <li>Unlimited workspace</li>
-              <li>Access to RestAPI</li>
-              <li>Priority Customer Support</li>
-              <li>Real-Time Analytics</li>
-            </ul>
-          </div>
-          <div className="plan-card-bottom">
-            <p className="plan-price pro">
-              ${isYearly ? "250" : "30"} <span>/ month</span>
-            </p>
-            <button className="plan-button pro">Book Demo</button>
-          </div>
-        </div>
-        <div className="plan-card enterprises">
-          <div className="plan-card-top">
-            <h3 className="plan-name">Enterprises</h3>
-            <p className="plan-description">
-              Scale product research and learning across your company.
-            </p>
-            <ul className="plan-features">
-              <li>Unlimited workspace</li>
-              <li>Access to RestAPI</li>
-              <li>Priority Customer Support</li>
-              <li>Real-Time Analytics</li>
-              <li>Data Export Capabilities</li>
-              <li>Advanced Security</li>
-              <li>Multi-User Access</li>
-            </ul>
-          </div>
-          <div className="plan-card-bottom">
-            <p className="plan-price">
-              ${isYearly ? "499" : "50"} <span>/ month</span>
-            </p>
-            <button className="plan-button">Book Demo</button>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

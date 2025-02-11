@@ -8,7 +8,11 @@
   background-color: #ffffff;
   gap: 40px;
 }
-
+.check-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
 .plan-title {
   font-size: 48px;
   line-height: 57.6px;
@@ -119,6 +123,12 @@
   justify-content: space-between;
   align-items: left;
   gap: 32px;
+}
+
+.plan-card-top li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .plan-card:hover {
