@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="hero">
       <div className="container">
         <div className="hero-wrapper">
-          {/* <div className="graphics">
+          <div className="graphics">
             <div className="graphic graphic-1">
               <img src={Graphic1} alt="Graphic 1" />
             </div>
@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="graphic graphic-3">
               <img src={Graphic3} alt="Graphic 3" />
             </div>
-          </div> */}
+          </div>
 
           <div className="heading-wrapper">
             <div className="headline">
