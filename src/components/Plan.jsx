@@ -47,11 +47,13 @@ const Plan = () => {
         <div className="label">
           <p className="label_text">pricing plan</p>
         </div>
-        <h2 className="plan-title">Choose Package</h2>
-        <p className="plan-subtitle">
-          Join our pro features for unlimited without any contract and cancel
-          anytime.
-        </p>
+        <div className="plan-heading">
+          <h2 className="plan-title">Choose Package</h2>
+          <p className="plan-subtitle">
+            Join our pro features for unlimited without any contract and cancel
+            anytime.
+          </p>
+        </div>
         <div className="toggle">
           <span className={!isYearly ? "active" : ""}>Monthly</span>
           <div className="toggle-button" onClick={() => setIsYearly(!isYearly)}>

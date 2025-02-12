@@ -9,13 +9,13 @@ const Features = () => {
       title: "Pay with Fundsphere, quick, simple and easy",
       description:
         "Use Fundsphere to pay to a merchant and enjoy optimal payment user experience.",
-      image: picture_1,
+      image: picture_2,
     },
     {
       title: "Bank-level Security",
       description:
         "Personal information is encrypted and protected by industry standard banking security.",
-      image: picture_2,
+      image: picture_1,
     },
   ];
 

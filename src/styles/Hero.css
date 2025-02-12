@@ -8,6 +8,13 @@
   position: relative;
 }
 
+.hero-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .heading-wrapper {
   display: flex;
   flex-direction: column;
@@ -50,27 +57,28 @@
 }
 
 .graphics {
+  min-width: 644px;
+  max-height: 595px;
+  background-color: violet;
   position: relative;
-  width: 50%;
-  height: 500px;
 }
 
 .graphic {
-  position: absolute;
   width: 100%;
   max-width: 280px;
   border-radius: 16px;
   text-align: left;
+  position: absolute;
 }
 
 .graphic img {
-  height: auto;
-  display: block;
+  display: absolute;
   border-radius: 12px;
 }
 
 .graphic-1 {
-  left: 20px;
+  top: 20px;
+  left: 132px;
 }
 
 .graphic-2 {

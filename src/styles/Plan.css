@@ -15,6 +15,24 @@
   vertical-align: middle;
 }
 
+.plan-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 549px;
+}
+
+.plan-heading {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
 .plan-title {
   font-size: 48px;
   line-height: 57.6px;
@@ -26,14 +44,6 @@
   font-style: normal;
 }
 
-.plan-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 549px;
-}
 
 .plan-subtitle {
   line-height: 27px;
@@ -71,18 +81,20 @@
 }
 
 .toggle-button {
-  width: 50px;
-  height: 25px;
-  background-color: #d8dbe0;
+  width: 58px;
+  height: 32px;
+  background-color: #f9f9fb;
+  border: 1px solid #d8dbe0;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
 }
 
 .circle {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background-color: #635bff;
+  box-shadow: 0px 2px 4px 0px #00000029;;
   border-radius: 50%;
   position: absolute;
   top: 2.5px;
@@ -90,11 +102,11 @@
 }
 
 .circle.left {
-  transform: translateX(2px);
+  transform: translateX(4px);
 }
 
 .circle.right {
-  transform: translateX(25px);
+  transform: translateX(28px);
 }
 
 .plan-cards {
@@ -188,7 +200,7 @@
   font-size: 60px;
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
-  color: #635BFF;
+  color: #635bff;
   font-weight: 700;
   align-self: flex-start;
 }
@@ -202,12 +214,12 @@
   line-height: 24px;
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
-  color: #7B889D;
+  color: #7b889d;
   font-weight: 400;
 }
 
 .plan-price.pro .plan-month {
-  color: #7B889D;
+  color: #7b889d;
 }
 
 .plan-price span {
@@ -224,7 +236,7 @@
 .plan-button {
   display: inline-block;
   background-color: white;
-  color: #00112D;
+  color: #00112d;
   padding: 12px 32px;
   font-size: 16px;
   font-weight: 500;
@@ -246,7 +258,6 @@
 }
 
 @media (max-width: 1024px) {
-
   .plan-card {
     max-width: 100%;
     min-height: auto;
@@ -262,19 +273,22 @@
     text-align: left;
     width: 100%;
   }
+  .plan-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+  }
 }
 
 @media (max-width: 768px) {
-
   .plan-card {
     padding: 16px;
   }
 }
 
 @media (max-width: 480px) {
-
   .plan-card {
     padding: 12px;
   }
-
 }

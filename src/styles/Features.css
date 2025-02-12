@@ -124,14 +124,6 @@
     max-width: 500px;
   }
 
-  .features-title {
-    font-size: 36px;
-  }
-
-  .features-subtitle {
-    font-size: 16px;
-  }
-
   .features-cards {
     flex-direction: row;
     gap: 40px;
@@ -146,14 +138,6 @@
 @media (max-width: 768px) {
   .features-section {
     padding: 60px 20px;
-  }
-
-  .features-title {
-    font-size: 32px;
-  }
-
-  .features-subtitle {
-    font-size: 14px;
   }
 
   .features-cards {
@@ -171,14 +155,6 @@
 @media (max-width: 480px) {
   .features-section {
     padding: 40px 10px;
-  }
-
-  .features-title {
-    font-size: 28px;
-  }
-
-  .features-subtitle {
-    font-size: 12px;
   }
 
   .features-button {

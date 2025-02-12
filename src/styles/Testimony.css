@@ -39,6 +39,10 @@
 .testimony-subtitle {
   font-size: 18px;
   line-height: 27px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-family: "DM Sans", serif;
+  font-weight: 400;
   color: #7b889d;
   text-align: center;
 }
@@ -66,14 +70,21 @@
 
 .rating-score {
   font-size: 18px;
-  font-weight: 500;
+  line-height: 27px;
   color: #00112d;
+    letter-spacing: -0.5px;
+  font-family: "DM Sans", serif;
+  font-weight: 500;
 }
 
 .rating-source {
   font-size: 18px;
-  font-weight: 500;
+  line-height: 27px;
   color: #7b889d;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-family: "DM Sans", serif;
+  font-weight: 400;
 }
 
 .testimony-cards {

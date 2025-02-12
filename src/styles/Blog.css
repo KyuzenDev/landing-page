@@ -5,6 +5,9 @@
   text-align: left;
   padding: 120px 118px;
   background-color: #f9fafb;
+  background-image: url(../assets/graphic/graphic_blogs.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   gap: 40px;
 }
 
