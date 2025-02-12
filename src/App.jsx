@@ -8,7 +8,7 @@ import Plan from "./components/Plan";
 import Blog from "./components/Blog";
 import Testimony from "./components/Testimony";
 import Footer from "./components/Footer"; 
-import "./app.css";
+import "./App.css";
 import "./styles/Navbar.css";
 import "./styles/Hero.css";
 import "./styles/Ads.css";
