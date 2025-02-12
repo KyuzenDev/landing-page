@@ -8,15 +8,15 @@ import Plan from "./components/Plan";
 import Blog from "./components/Blog";
 import Testimony from "./components/Testimony";
 import Footer from "./components/Footer"; 
-import "./App.css";
-import "./Navbar.css";
-import "./Hero.css";
-import "./Ads.css";
-import "./Features.css";
-import "./Plan.css";
-import "./Blog.css";
-import "./Testimony.css";
-import "./Footer.css";
+import "./app.css";
+import "./styles/Navbar.css";
+import "./styles/Hero.css";
+import "./styles/Ads.css";
+import "./styles/Features.css";
+import "./styles/Plan.css";
+import "./styles/Blog.css";
+import "./styles/Testimony.css";
+import "./styles/Footer.css";
 
 function App() {
   return (
@@ -27,6 +27,8 @@ function App() {
       <Features />
       <Plan />
       <Blog />
+      <Testimony />
+      <Footer />
     </div>
   );
 }

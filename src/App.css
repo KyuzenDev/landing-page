@@ -2,6 +2,8 @@
   max-width: 1200rem;
 }
 
+/* Label CSS */
+
 .label {
   padding: 8px;
   background-color: #635bff1a;
@@ -21,4 +23,42 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+ /* Email Input CSS */
+
+.email-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  border-radius: 40px;
+  padding: 6px 6px 6px 18px;
+  overflow: hidden;
+}
+
+.email-input input {
+  border: none;
+  padding: 10px 15px;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+  border-radius: 25px 0 0 25px;
+}
+
+.email-input button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  min-width: 140px;
+  padding: 14px 32px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.email-input button:hover {
+  background-color: #5a52e0;
 }
