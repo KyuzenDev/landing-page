@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import starIcon from "../assets/icons/star.svg";
-import picture1 from "../assets/picture/path-to-image1.png";
-import picture2 from "../assets/picture/path-to-image2.png";
+import starIcon from "../../assets/icons/star.svg";
+import picture1 from "../../assets/picture/path-to-image1.png";
+import picture2 from "../../assets/picture/path-to-image2.png";
+import "../../styles/Testimony.css";
 
 const Testimony = () => {
   const testimonials = [

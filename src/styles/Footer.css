@@ -10,6 +10,7 @@
   background-color: #00112d;
   color: #ffffff;
   padding-top: 250px;
+  width: 100%;
   text-align: center;
 }
 
@@ -24,7 +25,7 @@
   background-color: #635bff;
   color: white;
   padding: 48px 120px;
-  width: 80%;
+  width: 1200px;
   border-radius: 24px;
   text-align: center;
   display: flex;
@@ -103,7 +104,7 @@
   padding: 150px 20px 56px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+
 }
 
 .footer-wrapper {
@@ -124,7 +125,7 @@
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 120px;
+  gap: 60px ;
 }
 
 .footer-column {

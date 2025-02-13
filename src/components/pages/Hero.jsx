@@ -1,15 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Graphic1 from "../assets/graphic/graphic_1.svg";
-import Graphic2 from "../assets/graphic/graphic_2.svg";
-import Graphic3 from "../assets/graphic/graphic_3.svg";
+import Graphic1 from "../../assets/graphic/graphic_1.svg";
+import Graphic2 from "../../assets/graphic/graphic_2.svg";
+import Graphic3 from "../../assets/graphic/graphic_3.svg";
+import "../../styles/Hero.css";
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="container">
         <div className="hero-wrapper">
-          <div className="graphics">
+          {/* <div className="graphics">
             <div className="graphic graphic-1">
               <img src={Graphic1} alt="Graphic 1" />
             </div>
@@ -19,7 +20,7 @@ const Hero = () => {
             <div className="graphic graphic-3">
               <img src={Graphic3} alt="Graphic 3" />
             </div>
-          </div>
+          </div> */}
 
           <div className="heading-wrapper">
             <div className="headline">
