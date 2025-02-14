@@ -35,11 +35,12 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 382px;
+  max-width: 482px;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 60px;
+  line-height: 72px;
   font-weight: bold;
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
@@ -49,45 +50,52 @@
 
 .hero p {
   color: #666;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 30px;
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-.graphics {
-  min-width: 644px;
-  max-height: 595px;
-  background-color: violet;
+.graphic-container {
+  width: 644px;
+  height: 595px;
+  background-image: url(../assets/background/graphic_bg_hero.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+
   position: relative;
 }
 
-.graphic {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 16px;
-  text-align: left;
+.graphic-bg {
+  width: 408px;
+  height: 553px;
+
   position: absolute;
+  z-index: 1;
+
+  transform: translateY(-50%);
+  top: 50%;
+}
+.graphic-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 16px;
+
+  position: relative;
+  z-index: 2;
 }
 
-.graphic img {
-  display: absolute;
-  border-radius: 12px;
-}
-
-.graphic-1 {
-  top: 20px;
-  left: 132px;
-}
-
-.graphic-2 {
-  top: 310px;
-}
-
-.graphic-3 {
-  top: 310px;
-  left: 330px;
+.graphic-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
 
 .data-menu {
@@ -127,6 +135,12 @@
   font-style: normal;
   text-align: center;
   color: #a6aebb;
+}
+
+@media (max-width: 1290px) {
+  .graphic-container {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {

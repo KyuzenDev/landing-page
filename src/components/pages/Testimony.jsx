@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import starIcon from "../../assets/icons/star.svg";
 import picture1 from "../../assets/picture/path-to-image1.png";
 import picture2 from "../../assets/picture/path-to-image2.png";
 import "../../styles/Testimony.css";
 
 const Testimony = () => {
-  const testimonials = [
+  const allTestimonials = [
     {
       image: picture1,
       quote:
@@ -20,7 +20,25 @@ const Testimony = () => {
       name: "John Smith",
       position: "Operations Manager at Ebay",
     },
+    {
+      image: picture1,
+      quote: "User-friendly and efficient. A must-have for any business.",
+      name: "Anna Brown",
+      position: "CEO at TechStart",
+    },
+    {
+      image: picture2,
+      quote: "Fast transactions and excellent support team.",
+      name: "Michael Johnson",
+      position: "Finance Director at PayTech",
+    },
   ];
+
+  const [visibleCount, setVisibleCount] = useState(2);
+
+  const handleReadMore = () => {
+    setVisibleCount(allTestimonials.length);
+  };
 
   return (
     <section className="testimony-section">
@@ -53,9 +71,16 @@ const Testimony = () => {
             <span className="rating-source">REVIEW FROM TRUSTPILOT</span>
           </div>
         </div>
-        <div className="testimony-cards">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="testimony-card">
+        <div
+          className="testimony-cards"
+          style={{ flexWrap: "wrap", justifyContent: "center" }}
+        >
+          {allTestimonials.slice(0, visibleCount).map((testimonial, index) => (
+            <div
+              key={index}
+              className="testimony-card"
+  
+            >
               <div className="image">
                 <img
                   className="testimony-image"
@@ -73,9 +98,13 @@ const Testimony = () => {
             </div>
           ))}
         </div>
-        <div className="testimony-footer">
-          <button className="testimony-button">Read More Testimony</button>
-        </div>
+        {visibleCount < allTestimonials.length && (
+          <div className="testimony-footer">
+            <button className="testimony-button" onClick={handleReadMore}>
+              Read More Testimony
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

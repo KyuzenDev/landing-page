@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import picture_1 from "../../assets/picture/picture_1.png";
 import picture_2 from "../../assets/picture/picture_2.png";
 import "../../styles/Features.css";
 
 const Features = () => {
-  const features = [
+  const allFeatures = [
     {
       title: "Pay with Fundsphere, quick, simple and easy",
       description:
@@ -18,7 +18,25 @@ const Features = () => {
         "Personal information is encrypted and protected by industry standard banking security.",
       image: picture_1,
     },
+    {
+      title: "Seamless Integration",
+      description:
+        "Easily integrate Fundsphere with your existing payment system with minimal effort.",
+      image: picture_2,
+    },
+    {
+      title: "Global Accessibility",
+      description:
+        "Access Fundsphere services from anywhere in the world with ease.",
+      image: picture_1,
+    },
   ];
+
+  const [visibleCount, setVisibleCount] = useState(2);
+
+  const handleSeeMore = () => {
+    setVisibleCount(allFeatures.length);
+  };
 
   return (
     <section className="features-section">
@@ -34,9 +52,16 @@ const Features = () => {
               investors, & more.
             </p>
           </div>
-          <div className="features-cards">
-            {features.map((feature, index) => (
-              <div key={index} className="feature-card">
+          <div
+            className="features-cards"
+            style={{ flexWrap: "wrap", justifyContent: "center" }}
+          >
+            {allFeatures.slice(0, visibleCount).map((feature, index) => (
+              <div
+                key={index}
+                className="feature-card"
+                style={{ width: "45%" }}
+              >
                 <div className="feature-heading">
                   <h3 className="feature-title">{feature.title}</h3>
                   <p className="feature-description">{feature.description}</p>
@@ -47,7 +72,11 @@ const Features = () => {
               </div>
             ))}
           </div>
-          <button className="features-button">See More Features</button>
+          {visibleCount < allFeatures.length && (
+            <button className="features-button" onClick={handleSeeMore}>
+              See More Features
+            </button>
+          )}
         </div>
       </div>
     </section>
