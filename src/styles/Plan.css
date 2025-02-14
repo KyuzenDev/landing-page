@@ -263,7 +263,7 @@
     padding: 40px 20px;
   }
   .plan-card {
-    max-width: 80%;
+    max-width: 85%;
     min-height: auto;
     padding: 20px;
     display: flex;
@@ -271,7 +271,7 @@
   }
 
   .plan-cards {
-    align-items: center;
+align-items: center;
     flex-direction: column;
     gap: 40px;
   }
@@ -293,7 +293,7 @@
 
 @media (max-width: 768px) {
   .plan-card {
-    min-width: 100%;
+    min-width: 85%;
     padding: 16px;
   }
 }
