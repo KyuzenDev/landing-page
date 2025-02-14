@@ -4,6 +4,8 @@ import graphic_blog_1 from "../../assets/graphic/graphic_blog_1.png";
 import graphic_blog_2 from "../../assets/graphic/graphic_blog_2.png";
 import graphic_blog_3 from "../../assets/graphic/graphic_blog_3.png";
 import "../../styles/Blog.css";
+import Button from "../ui/Button";
+import Label from "../ui/Label";
 
 const Blog = () => {
   const allArticles = [
@@ -51,13 +53,14 @@ const Blog = () => {
       <div className="container">
         <div className="blog-wrapper">
           <div className="blog-header">
-            <div className="label">
-              <div className="label_text">Insight</div>
-            </div>
+            <Label>Insight</Label>
             <h2 className="blog-title">Magazine</h2>
             <p className="blog-subtitle">Find growth insight in our blog.</p>
           </div>
-          <div className="blog-cards" style={{ display: "flex", flexWrap: "wrap" }}>
+          <div
+            className="blog-cards"
+            style={{ display: "flex", flexWrap: "wrap" }}
+          >
             {allArticles.slice(0, visibleCount).map((article, index) => (
               <div key={index} className="blog-card" style={{ width: "30%" }}>
                 <div className="blog-image">
@@ -72,9 +75,7 @@ const Blog = () => {
           </div>
           {visibleCount < allArticles.length && (
             <div className="blog-footer">
-              <button className="blog-button" onClick={handleReadMore}>
-                Read More Article
-              </button>
+              <Button onClick={handleReadMore}>Read More Article</Button>
             </div>
           )}
         </div>

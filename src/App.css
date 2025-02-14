@@ -1,27 +1,4 @@
-/* Label CSS */
-
-.label {
-  padding: 8px;
-  background-color: #635bff1a;
-  min-width: 120px;
-  max-width: 120px;
-  max-height: 37px;
-  border-radius: 20px;
-}
-
-.label .label_text {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 14px;
-  color: #635bff;
-  line-height: 21px;
-  font-family: "DM Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
- /* Email Input CSS */
+/* Email Input CSS */
 
 .email-input {
   width: 100%;
@@ -41,20 +18,4 @@
   font-size: 14px;
   flex: 1;
   border-radius: 25px 0 0 25px;
-}
-
-.email-input button {
-  background-color: #6c63ff;
-  color: white;
-  border: none;
-  min-width: 140px;
-  padding: 14px 32px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
-}
-
-.email-input button:hover {
-  background-color: #5a52e0;
 }

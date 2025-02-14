@@ -74,42 +74,16 @@
   gap: 10px;
 }
 
-.cta-input {
-  padding: 12px 15px;
-  border-radius: 30px;
-  border: 1px solid white;
-  font-size: 16px;
-  width: 300px;
-  outline: none;
-}
-
-.cta-button {
-  background-color: white;
-  color: #6d28d9;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background-color: #f3e8ff;
-}
-
 /* FOOTER */
 .footer {
   position: relative;
   padding: 150px 20px 56px;
   display: flex;
   flex-direction: column;
-
 }
 
 .footer-wrapper {
-  padding-right: 120px;
-  padding-left: 120px;
+  max-width: 1472.8px;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -125,7 +99,7 @@
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px ;
+  gap: 60px;
 }
 
 .footer-column {

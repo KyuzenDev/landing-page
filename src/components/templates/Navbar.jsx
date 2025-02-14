@@ -6,6 +6,7 @@ import { GoChevronDown } from "react-icons/go";
 import { LuMenu } from "react-icons/lu";
 import "../../styles/Navbar.css";
 import "../../styles/styles.css";
+import Button from "../ui/Button";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -44,14 +45,14 @@ const Navbar = () => {
               <a href="#">About Us</a>
               <a href="#">Blog</a>
               <div className="actions open">
-                <button className="signin">Sign in</button>
-                <button className="trial">Free Trial</button>
+                <Button variant="secondary">Sign in</Button>
+                <Button>Free Trial</Button>
               </div>
             </div>
 
             <div className="actions">
-              <button className="signin">Sign in</button>
-              <button className="trial">Free Trial</button>
+              <Button variant="secondary">Sign in</Button>
+              <Button>Free Trial</Button>
             </div>
           </div>
           <div className="hamburger" onClick={toggleMenu}>

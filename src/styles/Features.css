@@ -60,7 +60,7 @@
   padding: 32px 40px;
   text-align: left;
   gap: 24px;
-  max-width: 584px;
+  max-width: 45%;
   box-sizing: border-box;
 }
 
@@ -94,21 +94,6 @@
   font-weight: 400;
   font-style: normal;
   color: #7b889d;
-}
-
-.features-button {
-  display: inline-block;
-  background-color: #635bff;
-  color: #ffffff;
-  padding: 16px 32px;
-  font-size: 16px;
-  font-family: "DM Sans", serif;
-  font-optical-sizing: auto;
-  line-height: 24px;
-  font-weight: 500;
-  border-radius: 40px;
-  border: none;
-  cursor: pointer;
 }
 
 .features-button:hover {
@@ -145,11 +130,11 @@
     gap: 30px;
   }
 
-  .features-button {
-    padding: 12px 24px;
-    font-size: 14px;
-    line-height: 20px;
+    .feature-card {
+    max-width: 100%;
+    padding: 20px;
   }
+
 }
 
 @media (max-width: 480px) {
@@ -161,5 +146,9 @@
     padding: 10px 20px;
     font-size: 12px;
     line-height: 18px;
+  }
+    .feature-card {
+    max-width: 100%;
+    padding: 20px;
   }
 }

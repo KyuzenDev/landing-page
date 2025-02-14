@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import checkIcon from "../../assets/graphic/check-circle.svg";
 import "../../styles/Plan.css";
+import Label from "../ui/Label";
 
 const Plan = () => {
   const [isYearly, setIsYearly] = useState(true);
@@ -47,9 +48,7 @@ const Plan = () => {
       <div className="container">
         <div className="plan-wrapper">
           <div className="plan-header">
-            <div className="label">
-              <p className="label_text">pricing plan</p>
-            </div>
+            <Label>Pricing Plan</Label>
             <div className="plan-heading">
               <h2 className="plan-title">Choose Package</h2>
               <p className="plan-subtitle">

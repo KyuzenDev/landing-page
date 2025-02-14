@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import picture_1 from "../../assets/picture/picture_1.png";
 import picture_2 from "../../assets/picture/picture_2.png";
 import "../../styles/Features.css";
+import Button from "../ui/Button";
+import Label from "../ui/Label";
 
 const Features = () => {
   const allFeatures = [
@@ -43,9 +45,7 @@ const Features = () => {
       <div className="container">
         <div className="features-wrapper">
           <div className="features-header">
-            <div className="label">
-              <div className="label_text">features</div>
-            </div>
+            <Label>Features</Label>
             <h2 className="features-title">Features designed for you</h2>
             <p className="features-subtitle">
               Growth-accelerating products for startups, ecommerce stores, angel
@@ -60,7 +60,6 @@ const Features = () => {
               <div
                 key={index}
                 className="feature-card"
-                style={{ width: "45%" }}
               >
                 <div className="feature-heading">
                   <h3 className="feature-title">{feature.title}</h3>
@@ -73,9 +72,7 @@ const Features = () => {
             ))}
           </div>
           {visibleCount < allFeatures.length && (
-            <button className="features-button" onClick={handleSeeMore}>
-              See More Features
-            </button>
+            <Button onClick={handleSeeMore}>See More Features</Button>
           )}
         </div>
       </div>

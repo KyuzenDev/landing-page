@@ -6,6 +6,7 @@ import linkEdin from "../../assets/socials/linkEdin.svg";
 import x from "../../assets/socials/x.svg";
 import "../../styles/Footer.css";
 import "../../styles/styles.css";
+import Button from "../ui/Button";
 
 const Footer = () => {
   const socials = [
@@ -39,12 +40,13 @@ const Footer = () => {
                 </p>
                 <div className="email-input">
                   <input type="email" placeholder="Your work email" />
-                  <button>Get Started</button>
+                  <Button>Get Started</Button>
                 </div>
               </div>
             </div>
           </div>
-          {/* Footer Section */}\
+
+          {/* Footer Section */}
           <footer className="footer">
             <div className="footer-wrapper">
               <div className="footer-content">

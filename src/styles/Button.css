@@ -1,0 +1,29 @@
+.custom-button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  line-height: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #5a52e0;
+}
+
+/* Secondary Button */
+.custom-button.secondary {
+  background-color: white;
+  color: #6c63ff;
+  padding: 13px 31px;
+}
+
+.custom-button.secondary:hover {
+  transform: scale(1.05);
+}

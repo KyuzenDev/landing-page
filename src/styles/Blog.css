@@ -100,20 +100,6 @@
   text-align: center;
 }
 
-.blog-button {
-  background-color: #635bff;
-  border: none;
-  border-radius: 40px;
-  color: #fff;
-  cursor: pointer;
-  padding: 18px 32px;
-  font-size: 1rem;
-}
-
-.blog-button:hover {
-  background-color: #5a52e0;
-}
-
 @media (max-width: 1250px) {
   .blog-title {
     font-size: 36px;
