@@ -101,15 +101,6 @@
 }
 
 @media (max-width: 1250px) {
-  .blog-title {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .blog-subtitle {
-    font-size: 16px;
-    line-height: 24px;
-  }
 
   .blog-cards {
     display: flex;
@@ -146,16 +137,6 @@
     flex-direction: row;
     align-items: center;
     gap: 32px;
-  }
-
-  .blog-title {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .blog-subtitle {
-    font-size: 14px;
-    line-height: 22px;
   }
 
   .blog-card {
