@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import starIcon from "../../assets/icons/star.svg";
 import picture1 from "../../assets/picture/path-to-image1.png";
 import picture2 from "../../assets/picture/path-to-image2.png";
 import "../../styles/Testimony.css";
 import "../../styles/styles.css";
 import Button from "../atoms/Button";
 import Label from "../atoms/Label";
+import StarRating from "../atoms/StarRating";
+import TestimonyList from "../organisms/TestimonyList";
 
 const Testimony = () => {
   const allTestimonials = [
@@ -59,49 +60,16 @@ const Testimony = () => {
               </p>
             </div>
             <div className="testimony-rating">
-              <div className="rating">
-                <div className="stars">
-                  {[...Array(5)].map((_, index) => (
-                    <img
-                      key={index}
-                      src={starIcon}
-                      alt="star icon"
-                      className="star-icon"
-                    />
-                  ))}
-                </div>
-                <span className="rating-score">4.9</span>
-              </div>
+              <StarRating rating={4.9} />
               <span className="rating-source">REVIEW FROM TRUSTPILOT</span>
             </div>
           </div>
-          <div
-            className="testimony-cards"
-            style={{ flexWrap: "wrap", justifyContent: "center" }}
-          >
-            {allTestimonials
-              .slice(0, visibleCount)
-              .map((testimonial, index) => (
-                <div key={index} className="testimony-card">
-                  <div className="image">
-                    <img
-                      className="testimony-image"
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                    />
-                  </div>
-                  <div className="testimony-heading">
-                    <p className="testimony-quote">“{testimonial.quote}“</p>
-                    <div className="testimony-details">
-                      <h4 className="testimony-name">{testimonial.name}</h4>
-                      <p className="testimony-position">
-                        {testimonial.position}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-          </div>
+
+          <TestimonyList
+            testimonials={allTestimonials}
+            visibleCount={visibleCount}
+          />
+
           {visibleCount < allTestimonials.length && (
             <div className="testimony-footer">
               <Button onClick={handleReadMore}>Read More Testimony</Button>
