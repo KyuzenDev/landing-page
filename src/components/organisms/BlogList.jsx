@@ -5,7 +5,7 @@ import BlogCard from "../molecules/BlogCard";
 
 const BlogList = ({ articles, visibleCount }) => {
   return (
-    <div className="blog-cards">
+    <div className="blog-cards" style={{ display: "flex", flexWrap: "wrap" }}>
       {articles.slice(0, visibleCount).map((article, index) => (
         <BlogCard
           key={index}

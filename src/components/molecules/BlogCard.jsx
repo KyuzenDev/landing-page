@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const BlogCard = ({ title, date, image }) => {
   return (
-    <div className="blog-card">
+    <div className="blog-card" style={{ width: "30%" }}>
       <div className="blog-image">
         <img src={image} alt={title} />
       </div>
