@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import picture_1 from "../../assets/picture/picture_1.png";
 import picture_2 from "../../assets/picture/picture_2.png";
 import "../../styles/Features.css";
-import Button from "../ui/Button";
-import Label from "../ui/Label";
+import "../../styles/styles.css";
+import Button from "../atoms/Button";
+import Label from "../atoms/Label";
 
 const Features = () => {
   const allFeatures = [
@@ -54,13 +55,14 @@ const Features = () => {
           </div>
           <div
             className="features-cards"
-            style={{ justifyContent: "center", display: "flex", flexWrap: "wrap" }}
+            style={{
+              justifyContent: "center",
+              display: "flex",
+              flexWrap: "wrap",
+            }}
           >
             {allFeatures.slice(0, visibleCount).map((feature, index) => (
-              <div
-                key={index}
-                className="feature-card"
-              >
+              <div key={index} className="feature-card">
                 <div className="feature-heading">
                   <h3 className="feature-title">{feature.title}</h3>
                   <p className="feature-description">{feature.description}</p>

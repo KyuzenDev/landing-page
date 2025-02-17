@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import checkIcon from "../../assets/graphic/check-circle.svg";
 import "../../styles/Plan.css";
-import Label from "../ui/Label";
+import "../../styles/styles.css";
+import Label from "../atoms/Label";
 
 const Plan = () => {
   const [isYearly, setIsYearly] = useState(true);

@@ -6,7 +6,7 @@ import linkEdin from "../../assets/socials/linkEdin.svg";
 import x from "../../assets/socials/x.svg";
 import "../../styles/Footer.css";
 import "../../styles/styles.css";
-import Button from "../ui/Button";
+import Button from "../atoms/Button";
 
 const Footer = () => {
   const socials = [

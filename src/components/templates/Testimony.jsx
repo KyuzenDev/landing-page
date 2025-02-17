@@ -4,8 +4,9 @@ import starIcon from "../../assets/icons/star.svg";
 import picture1 from "../../assets/picture/path-to-image1.png";
 import picture2 from "../../assets/picture/path-to-image2.png";
 import "../../styles/Testimony.css";
-import Button from "../ui/Button";
-import Label from "../ui/Label";
+import "../../styles/styles.css";
+import Button from "../atoms/Button";
+import Label from "../atoms/Label";
 
 const Testimony = () => {
   const allTestimonials = [

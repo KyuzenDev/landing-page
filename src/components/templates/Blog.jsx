@@ -4,8 +4,9 @@ import graphic_blog_1 from "../../assets/graphic/graphic_blog_1.png";
 import graphic_blog_2 from "../../assets/graphic/graphic_blog_2.png";
 import graphic_blog_3 from "../../assets/graphic/graphic_blog_3.png";
 import "../../styles/Blog.css";
-import Button from "../ui/Button";
-import Label from "../ui/Label";
+import "../../styles/styles.css";
+import Button from "../atoms/Button";
+import Label from "../atoms/Label";
 
 const Blog = () => {
   const allArticles = [

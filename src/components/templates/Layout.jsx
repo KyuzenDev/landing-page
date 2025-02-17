@@ -3,7 +3,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import "../../styles/styles.css";
 
 const Layout = ({ children }) => {
   return (

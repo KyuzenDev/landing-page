@@ -6,7 +6,7 @@ import { GoChevronDown } from "react-icons/go";
 import { LuMenu } from "react-icons/lu";
 import "../../styles/Navbar.css";
 import "../../styles/styles.css";
-import Button from "../ui/Button";
+import Button from "../atoms/Button";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
