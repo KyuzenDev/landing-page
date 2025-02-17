@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import checkIcon from "../../assets/graphic/check-circle.svg";
 import "../../styles/Plan.css";
 import "../../styles/styles.css";
 import Label from "../atoms/Label";
+import ToggleButton from "../atoms/ToggleButton";
+import PlanList from "../organisms/PlanList";
 
 const Plan = () => {
   const [isYearly, setIsYearly] = useState(true);
@@ -12,14 +13,16 @@ const Plan = () => {
     {
       name: "Basic",
       description: "Kickstart product research in your business at no cost.",
-      price: isYearly ? "199" : "20",
+      yearlyPrice: "199",
+      monthlyPrice: "20",
       features: ["Unlimited workspace", "Access to RestAPI"],
     },
     {
       name: "Pro",
       description:
         "Fuel your product workflow with more advanced research features.",
-      price: isYearly ? "250" : "30",
+      yearlyPrice: "250",
+      monthlyPrice: "30",
       features: [
         "Unlimited workspace",
         "Access to RestAPI",
@@ -31,7 +34,8 @@ const Plan = () => {
     {
       name: "Enterprises",
       description: "Scale product research and learning across your company.",
-      price: isYearly ? "499" : "50",
+      yearlyPrice: "499",
+      monthlyPrice: "50",
       features: [
         "Unlimited workspace",
         "Access to RestAPI",
@@ -57,50 +61,12 @@ const Plan = () => {
                 cancel anytime.
               </p>
             </div>
-            <div className="toggle">
-              <span className={!isYearly ? "active" : ""}>Monthly</span>
-              <div
-                className="toggle-button"
-                onClick={() => setIsYearly(!isYearly)}
-              >
-                <div className={`circle ${isYearly ? "right" : "left"}`}></div>
-              </div>
-              <span className={isYearly ? "active" : ""}>Yearly</span>
-            </div>
+            <ToggleButton
+              isYearly={isYearly}
+              togglePlan={() => setIsYearly(!isYearly)}
+            />
           </div>
-          <div className="plan-cards">
-            {plans.map((plan, index) => (
-              <div
-                key={index}
-                className={`plan-card ${plan.isPro ? "pro active" : ""}`}
-              >
-                <div className="plan-card-top">
-                  <h3 className="plan-name">{plan.name}</h3>
-                  <p className="plan-description">{plan.description}</p>
-                  <ul className={`plan-features ${plan.isPro ? "pro" : ""}`}>
-                    {plan.features.map((feature, idx) => (
-                      <li key={idx}>
-                        <img
-                          src={checkIcon}
-                          alt="check icon"
-                          className="check-icon"
-                        />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="plan-card-bottom">
-                  <p className={`plan-price ${plan.isPro ? "pro" : ""}`}>
-                    ${plan.price} <span>/ month</span>
-                  </p>
-                  <button className={`plan-button ${plan.isPro ? "pro" : ""}`}>
-                    Book Demo
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+          <PlanList plans={plans} isYearly={isYearly} />
         </div>
       </div>
     </section>
