@@ -54,7 +54,7 @@ const Features = () => {
           </div>
           <div
             className="features-cards"
-            style={{ justifyContent: "center" }}
+            style={{ justifyContent: "center", display: "flex", flexWrap: "wrap" }}
           >
             {allFeatures.slice(0, visibleCount).map((feature, index) => (
               <div
