@@ -5,8 +5,9 @@ import graphic_blog_2 from "../../assets/graphic/graphic_blog_2.png";
 import graphic_blog_3 from "../../assets/graphic/graphic_blog_3.png";
 import "../../styles/Blog.css";
 import "../../styles/styles.css";
-import Button from "../atoms/Button";
 import Label from "../atoms/Label";
+import Button from "../atoms/Button";
+import BlogList from "../organisms/BlogList";
 
 const Blog = () => {
   const allArticles = [
@@ -58,22 +59,9 @@ const Blog = () => {
             <h2 className="blog-title">Magazine</h2>
             <p className="blog-subtitle">Find growth insight in our blog.</p>
           </div>
-          <div
-            className="blog-cards"
-            style={{ display: "flex", flexWrap: "wrap" }}
-          >
-            {allArticles.slice(0, visibleCount).map((article, index) => (
-              <div key={index} className="blog-card" style={{ width: "30%" }}>
-                <div className="blog-image">
-                  <img src={article.image} alt={article.title} />
-                </div>
-                <div className="blog-content">
-                  <h3 className="blog-article-title">{article.title}</h3>
-                  <p className="blog-date">{article.date}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+
+          <BlogList articles={allArticles} visibleCount={visibleCount} />
+
           {visibleCount < allArticles.length && (
             <div className="blog-footer">
               <Button onClick={handleReadMore}>Read More Article</Button>
