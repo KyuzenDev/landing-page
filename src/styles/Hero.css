@@ -19,14 +19,13 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-   z-index: 20;
+  z-index: 20;
 }
 
 .headline {
   display: flex;
   flex-direction: column;
   gap: 32px;
- 
 }
 
 .highlight {
@@ -84,8 +83,9 @@
 }
 .graphic-wrapper {
   display: flex;
+  height: 540px;
   flex-direction: column;
-left: 0;
+  left: 0;
   align-items: center;
   gap: 50px;
   position: absolute;
