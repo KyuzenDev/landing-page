@@ -101,11 +101,15 @@ const Footer = () => {
                   <div className="footer-logo">
                     <img src={logoFooter} alt="Fundsphere" />
                   </div>
-                  <p>Sudirman St., 12B, Malang</p>
-                  <p>+1 215-2231-5523</p>
-                  <p>
-                    <a href="mailto:hello@fundsphere.id">hello@fundsphere.id</a>
-                  </p>
+                  <div className="footer-text-address">
+                    <p>Sudirman St., 12B, Malang</p>
+                    <p>+1 215-2231-5523</p>
+                    <p>
+                      <a href="mailto:hello@fundsphere.id">
+                        hello@fundsphere.id
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
 

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import PageTemplates from "../templates/Layout";
+import PageTemplates from "../layout/Layout";
 import Hero from "../templates/Hero";
 import Ads from "../templates/Ads";
 import Features from "../templates/Features";
