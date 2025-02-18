@@ -14,7 +14,7 @@
 
 /* CTA Section */
 .cta-container {
-  max-width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   background-image: url("../assets/graphic/cta_graphic.svg");
   background-size: cover;
@@ -43,7 +43,7 @@
 .cta-bottom {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
   flex-direction: column;
   gap: 32px;
 }

@@ -63,8 +63,7 @@ table {
 
 /* Email Input CSS */
 
-.email-input {
-  width: 100%;
+.email-input {  
   display: flex;
   align-items: center;
   background-color: white;

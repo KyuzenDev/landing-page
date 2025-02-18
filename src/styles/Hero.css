@@ -81,13 +81,14 @@
   transform: translateY(-50%);
   top: 50%;
 }
+
 .graphic-wrapper {
   display: flex;
-  height: 540px;
+  height: 580px;
   flex-direction: column;
   left: 0;
   align-items: center;
-  gap: 50px;
+  gap: 36px;
   position: absolute;
   z-index: 2;
 }
@@ -95,6 +96,7 @@
 .graphic-flex {
   display: flex;
   flex-direction: row;
+  align-items: start;
   gap: 16px;
 }
 
