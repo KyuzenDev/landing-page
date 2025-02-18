@@ -7,18 +7,20 @@ import DataMenu from "../molecules/DataMenu";
 const HeroContent = () => {
   return (
     <div className="heading-wrapper">
-      <Label className="label">Best Choice</Label>
-      <div className="heading">
-        <h1>
-          Future strategic finance for
-          <span className="highlight"> Entrepreneurs</span>
-        </h1>
-        <p>
-          Scale with checking and savings accounts, custom tools, and access to
-          our investor network.
-        </p>
+      <div className="heading-top">
+        <Label className="label">Best Choice</Label>
+        <div className="heading">
+          <h1>
+            Future strategic finance for
+            <span className="highlight"> Entrepreneurs</span>
+          </h1>
+          <p>
+            Scale with checking and savings accounts, custom tools, and access
+            to our investor network.
+          </p>
+        </div>
+        <EmailInput />
       </div>
-      <EmailInput />
       <DataMenu />
     </div>
   );
