@@ -14,7 +14,7 @@
 
 /* CTA Section */
 .cta-container {
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
   background-image: url("../assets/graphic/cta_graphic.svg");
   background-size: cover;
@@ -181,6 +181,7 @@
 @media screen and (max-width: 1024px) {
   .cta-container {
     padding: 40px 5%;
+    max-width: 80%;
     top: -80px;
   }
 
@@ -218,6 +219,7 @@
 @media screen and (max-width: 768px) {
   .cta-container {
     padding: 30px 5%;
+    max-width: 90%;
     top: -60px;
     border-radius: 16px;
   }
